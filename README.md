@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <h1 align="center">Project Management System</h3>
 <h4 align="center"> [CCPROG2] Programming with Structured Data Types — Machine Project</h4>
-<div align="center"> <img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/e9917039-a033-42b8-91fa-8f16abe90e95" width = "1000"></div>
+<div align="center"> <img src =  width = "1000"></div>
 
 ## About The Project
 
@@ -41,7 +41,7 @@ A **Task** carries a range of attributes, including a task ID, name, sequence, c
 
 ## Screenshots
 ### Admin Menu
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/9752f292-4ce0-4499-90e6-1f4e416a976f" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/2267b7e1-37d4-4ed9-bc2d-5c9d1e8c6a4f" width = "700">
 <img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/e785426c-add2-4a4f-ba8f-b06da8d22f95" width = "700">
 
 ### Manager Menu
