@@ -1,7 +1,8 @@
 <a name="readme-top"></a>
 <h1 align="center">Project Management System</h3>
 <h4 align="center"> [CCPROG2] Programming with Structured Data Types — Machine Project</h4>
-<div align="center"> <img src = "https://user-images.githubusercontent.com/132218960/235395134-aeb6fd6c-18be-4ebc-bc78-e1ae812dd704.png" width = "700"></div>
+<div align="center"> <img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/e9917039-a033-42b8-91fa-8f16abe90e95"
+ width = "700"></div>
 
 ## About The Project
 
