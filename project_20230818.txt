@@ -1,0 +1,18 @@
+8282 Project Management App Design
+8030
+2
+33.333
+Design the user interface and features of a project management app.
+
+8997 Back-End Development for PM App
+8030
+1
+0.000
+Develop the back-end functionality and database for the project management app.
+
+1039 Front-End Development for PM App
+8030
+1
+0.000
+Develop the front-end interface and user interactions for the project management app.
+

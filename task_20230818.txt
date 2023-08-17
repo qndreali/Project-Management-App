@@ -1,0 +1,90 @@
+828200 User Interface Design
+1
+create wireframes and mockups for the app's user interface.
+8282
+08/01/2023
+08/10/2023
+9.000
+3
+8057
+
+828201 Feature Specification
+2
+Define the key features of the app, such as task tracking, team collaboration, and reporting.
+8282
+08/11/2023
+08/20/2023
+9.000
+2
+8057
+
+828202 Prototype Development
+3
+Develop an interactive prototype of the app's user interface for testing and feedback.
+8282
+08/21/2023
+08/31/2023
+10.000
+1
+8057
+
+899700 Database Design
+1
+Design the database schema to store project data, tasks, user accounts, and more.
+8997
+09/01/2023
+09/07/2023
+6.000
+1
+8057
+
+899701 API Development
+2
+Create RESTful APIs to handle user authentication, project creation, task management, and more.
+8997
+09/08/2023
+09/14/2023
+6.000
+1
+8057
+
+899702 Integration Testing
+3
+Test the APIs and database interactions to ensure data consistency and proper functioning.
+8997
+09/15/2023
+09/21/2023
+6.000
+1
+8057
+
+103900 UI Development
+1
+Implement the user interface design using HTML, CSS, and JavaScript frameworks.
+1039
+10/01/2023
+10/10/2023
+9.000
+1
+8057
+
+103901 User Interaction
+2
+Build interactive feautures such as task boards, user collaboration, and notification systems.
+1039
+10/11/2023
+10/20/2023
+9.000
+1
+8057
+
+103902 Cross-Browser Testing
+3
+Test the app's compatibility across different browsers and devices to ensure a seamless experience.
+1039
+10/21/2023
+10/31/2023
+10.000
+1
+8057
+

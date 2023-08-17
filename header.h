@@ -123,9 +123,9 @@ void
 displayUserTypeMenu(struct personnel personnelArray[],
 					int * numPersonnel,
 					struct project projectArray[],
-					int numProjects,
+					int * numProjects,
 					struct task taskArray[],
-					int numTasks);
+					int * numTasks);
 
 
 /********************************************************************/

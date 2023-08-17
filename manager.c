@@ -1632,7 +1632,6 @@ managerMenu(struct project projectArray[],
                 	computeCompletion(taskArray, *numTasks, projectArray[i].projectID) : 100; 
                 
     } while(option <= 10);
-
     
     if (option == 11)
         return 0;

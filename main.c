@@ -4,8 +4,8 @@
 	respective algorithms and corresponding code by ourselves. The program was run, tested,
 	and debugged by our own efforts. We further certify that we have not copied in part or
 	whole or otherwise plagiarized the work of other students and/or persons.
-					Andrea Li S. Santos, DLSU ID# 12209376
-					Ryan Clemence R. Vasquez, DLSU ID# 12288397
+					Andrea Li S. Santos
+					Ryan Clemence R. Vasquez
 *************************************************************************************************/
 
 #include "header.h"  
@@ -28,9 +28,9 @@ void
 displayUserTypeMenu(struct personnel personnelArray[],
 					int * numPersonnel,
 					struct project projectArray[],
-					int numProjects,
+					int * numProjects,
 					struct task taskArray[],
-					int numTasks)
+					int * numTasks)
 {
 	int personnelAccess,
 		personnelID,
@@ -46,13 +46,13 @@ displayUserTypeMenu(struct personnel personnelArray[],
 		switch(personnelAccess)
 		{
 		case 1:
-			exit = adminMenu(personnelArray, numPersonnel, taskArray, numTasks, projectArray, numProjects);
+			exit = adminMenu(personnelArray, numPersonnel, taskArray, *numTasks, projectArray, *numProjects);
 			break;
 		case 2:
-			exit = managerMenu(projectArray, taskArray, personnelArray, &numProjects, &numTasks, *numPersonnel);
+			exit = managerMenu(projectArray, taskArray, personnelArray, numProjects, numTasks, *numPersonnel);
 			break;
 		case 3:
-			exit = userMenu(personnelArray[personnelIndex], taskArray, numTasks, personnelArray, *numPersonnel);
+			exit = userMenu(personnelArray[personnelIndex], taskArray, *numTasks, personnelArray, *numPersonnel);
 			break;
 		}	
 	}
@@ -77,8 +77,8 @@ main(){
 		loadProjectRecord(projectArray, &numProjects, fnProjects);
 		loadTaskRecord(taskArray, &numTasks, fnTasks);
 	}
-	
-	displayUserTypeMenu(personnelArray, &numPersonnel, projectArray, numProjects, taskArray, numTasks);
+
+	displayUserTypeMenu(personnelArray, &numPersonnel, projectArray, &numProjects, taskArray, &numTasks);
 	exportData(projectArray, taskArray, personnelArray, numProjects, numTasks, numPersonnel);
 	
 	return 0;

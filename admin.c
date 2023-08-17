@@ -6,40 +6,42 @@ Description: This function loads the record from a file into an array of structs
     @param filename: The name of the text file containing the personnel information.
 **********************************************************************************/
 void 
-loadFile(struct personnel personnelArray[], 
-         int *numPersonnel, 
+loadFile(struct personnel personnelArray[],
+         int *numPersonnel,
          str24 fileName)
 {
     FILE *fp;
     int  id,
-		 index;
-  
+         index;
+
     fp = fopen(fileName, "r");
-  
-    if(fp == NULL)
+
+    if (fp == NULL)
     {
         fp = fopen(fileName, "w");
-            if (strcmp(fileName, "preloaded.txt") == 0)
-                fprintf(fp, "9999 \nadmin \nadmin123 \n1 \n1\n\n");
+        fprintf(fp, "9999 \nadmin \nadmin123 \n1 \n1\n\n");
         fclose(fp);
     }
-    else
-    {
-    	while ((fscanf(fp, "%d", &id) != EOF) && (*numPersonnel < MAX_PERSONNEL)){
-      		index = findPersonnel(id, personnelArray, *numPersonnel);
-    		if (index == -1){  
-				personnelArray[*numPersonnel].personnelID = id;
-				fscanf(fp, "%s\n%s\n%d\n%d", personnelArray[*numPersonnel].username, personnelArray[*numPersonnel].password, 
-									&personnelArray[*numPersonnel].active, &personnelArray[*numPersonnel].access);
-	          	(*numPersonnel)++;
-    		}
-    		
-		}
-		fclose(fp);
-	}
-    
-}
 
+    fclose(fp);
+
+    fp = fopen(fileName, "r");
+
+    while ((fscanf(fp, "%d", &id) != EOF) && (*numPersonnel < MAX_PERSONNEL))
+    {
+      	index = findPersonnel(id, personnelArray, *numPersonnel);
+        if (index == -1)
+        {  
+            personnelArray[*numPersonnel].personnelID = id;
+            fscanf(fp, "%s\n%s\n%d\n%d", personnelArray[*numPersonnel].username, personnelArray[*numPersonnel].password, 
+                                         &personnelArray[*numPersonnel].active, &personnelArray[*numPersonnel].access);
+            (*numPersonnel)++;
+        }
+	}
+	
+    fclose(fp);
+
+}
 /**********************************************************************************
 Description: This function checks whether the personnel username exists.
 	@param personnelArray: An array of structs that stores personnel information.
@@ -242,13 +244,6 @@ addUser(struct personnel personnelArray[],
 	
 	    personnelArray[*numPersonnel] = newPersonnel;
 	    (*numPersonnel) ++;
-	    
-	    FILE *fPersonnel = fopen("preloaded.txt", "a");
-	
-	    fprintf(fPersonnel, "%d\n%s\n%s\n%d\n%d\n\n", newPersonnel.personnelID, newPersonnel.username, newPersonnel.password, 
-												newPersonnel.active, newPersonnel.access);
-	
-	    fclose(fPersonnel);
 	}
 }
 
@@ -369,14 +364,6 @@ updateUser(struct personnel personnelArray[],
 					personnelArray[i].access = newAccess;
 					break;
 	        }
-			        
-		    FILE *fPersonnel = fopen("preloaded.txt", "w");
-			
-			for(i = 0; i < numPersonnel; i++)
-			    fprintf(fPersonnel, "%d\n%s\n%s\n%d\n%d\n\n", personnelArray[i].personnelID, personnelArray[i].username, personnelArray[i].password, 
-														personnelArray[i].active, personnelArray[i].access);
-				
-			fclose(fPersonnel);
 			
 			printDivider();
 			printf("\e[1;32m" "\nPersonnel updated successfully.\n" "\e[1;97m");
@@ -479,14 +466,6 @@ deleteUser(struct personnel personnelArray[],
 			clearScreen();
 			deleteUser(personnelArray, numPersonnel, taskArray, numTasks, projectArray, numProjects);
 		}
-    
-    FILE *fPersonnel = fopen("preloaded.txt", "w");
-
-    for(i = 0; i < *numPersonnel; i++)
-        fprintf(fPersonnel, "%d\n%s\n%s\n%d\n%d\n\n", personnelArray[i].personnelID, personnelArray[i].username, personnelArray[i].password, 
-												personnelArray[i].active, personnelArray[i].access);
-
-    fclose(fPersonnel);
 }
 
 
@@ -593,15 +572,7 @@ archiveUser(struct personnel personnelArray[],
 	    	printf("\e[1;31m" "Personnel ID does not exist. Please input an existing Personnel ID.\n\n" "\e[1;97m");
 			clearScreen();
 			archiveUser(personnelArray, numPersonnel);
-		}
-    
-    FILE *fPersonnel = fopen("preloaded.txt", "w");
-
-    for(i = 0; i < numPersonnel; i++)
-        fprintf(fPersonnel, "%d\n%s\n%s\n%d\n%d\n\n", personnelArray[i].personnelID, personnelArray[i].username, personnelArray[i].password, 
-												personnelArray[i].active, personnelArray[i].access);
-
-    fclose(fPersonnel);
+		} 
 }
 
 /**********************************************************************************
