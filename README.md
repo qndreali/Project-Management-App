@@ -42,23 +42,23 @@ A **Task** carries a range of attributes, including a task ID, name, sequence, c
 ## Screenshots
 ### Admin Menu
 <img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/2267b7e1-37d4-4ed9-bc2d-5c9d1e8c6a4f" width = "700">
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/e785426c-add2-4a4f-ba8f-b06da8d22f95" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/ee9d9caf-f45c-49ec-aba3-1f45edd32a56" width = "700">
 
 ### Manager Menu
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/1f2ccca6-7e7c-4036-9bc1-7594a9c0f3f5" width = "700">
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/ee23ee11-d72c-4ffc-89d0-baa4946932c4" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/15e62e2e-e26a-4aaa-8852-3bd194833f57" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/21d8d5d9-6c66-4b03-ad44-1bb03417246b" width = "700">
 
 
 
 ### User Menu
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/bcbd0ae4-b8bd-4d4f-9434-a71aaddb1f30" width = "700">
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/83e10a00-eee9-47ad-b616-2a73b1d431d8" width = "700">
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/9fc96766-6442-4240-9df3-b6396ce10965" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/582cd45c-524e-470c-9abc-4c67f7d095b2" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/e6ec38b4-911d-41bd-8be9-48951b962b21" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/dba90966-45de-4bf6-a7bb-1a411b5f1207" width = "700">
 
 
 ### Bonus Features
 - **Login History**
-<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/5ad47074-f92e-4d39-ab3d-54ee0c09e3e1" width = "700">
+<img src = "https://github.com/qndreali/Project-Management-System/assets/132218960/2f7dd5a4-d063-4081-b1e0-de8dca7d5087" width = "700">
 
 - **Admin Menu** 
 	- View all users
